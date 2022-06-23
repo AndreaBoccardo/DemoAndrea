@@ -123,7 +123,7 @@ fun MyTexts(course: MyCourse, navController: NavController){
             fontWeight = FontWeight.Normal,
             if (expanded) Int.MAX_VALUE else 1)
         Button(onClick = {
-            navController.navigate(route = AppScreens.DetailScreen.route + course.id)
+            navController.navigate(route = AppScreens.DetailScreen.route + "/${course.id}")
         }) {
             Text(stringResource(R.string.button_detail))
         }
