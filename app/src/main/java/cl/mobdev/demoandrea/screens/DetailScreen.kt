@@ -22,6 +22,7 @@ fun DetailScreen(navController: NavController, text: String?){
     Column() {
         if (text != null) {
             Text(text)
+            Text(text)
         }
     }
 }
